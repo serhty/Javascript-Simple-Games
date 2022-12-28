@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wheel of Fortune</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 step1" id="step1">
+				<form class="login100-form validate-form">
+					
+					<div class="wrap-input100 validate-input">
+                        <label>Type the Option We Want to Add to the Wheel</label>
+						<input class="input100 option" type="text" name="option" id="option" placeholder="Enter Option">
+					</div>
+                    <span class="addAlert" id="addAlert"></span>
+                    <br>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn addOptionButton" id="addOptionButton">
+							Add Option
+						</button>
+					</div>
+                    <br>
+                    <div class="container-login100-form-btn">
+						<button class="login100-form-btn createWheelButton" id="createWheelButton">
+							Create Wheel of Fortune
+						</button>
+					</div>
+
+				</form>
+                <div class="optionList" id="optionList"></div>
+			</div>
+            <div class="wrap-login100 step2" id="step2">
+                <div id="chart"></div>
+                <span class="optionResult fast-flicker" id="optionResult"></span>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</body>
+</html>

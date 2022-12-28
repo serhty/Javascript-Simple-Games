@@ -1,0 +1,33 @@
+.grid{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.ball{
+    background: blue;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    float: left;
+    margin: 0px;
+}
+
+.chosen{
+    background: red;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    float: left;
+    margin: 0px;
+}
